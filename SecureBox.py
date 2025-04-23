@@ -16,7 +16,7 @@ load_dotenv()
 _S3_BUCKET = os.getenv("SECUREBOX_BUCKET")
 _KMS_KEY_ID = os.getenv("SECUREBOX_KMS_KEY_ID")
 _MASTER_KEY = os.getenv("SECUREBOX_MASTER_KEY")
-_REGION = os.getenv("AWS_DEFAULT_REGION", "us-east-1")
+_REGION = os.getenv("AWS_DEFAULT_REGION", "ap-southeast-2")
 
 if not _S3_BUCKET:
     click.echo("[FATAL] SECUREBOX_BUCKET env var not set", err=True)
