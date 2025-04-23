@@ -4,12 +4,10 @@ import os
 import sys
 from pathlib import Path
 from typing import Tuple
-
 import boto3
 import click
 from botocore.exceptions import ClientError
 from cryptography.hazmat.primitives.ciphers.aead import AESGCM
-from cryptography.hazmat.primitives import serialization
 from dotenv import load_dotenv
 
 load_dotenv()
